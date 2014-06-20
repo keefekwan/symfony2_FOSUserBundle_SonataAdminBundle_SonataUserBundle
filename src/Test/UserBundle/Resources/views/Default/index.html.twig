@@ -1,0 +1,15 @@
+{% extends('::base.html.twig') %}
+
+{% block body %}
+
+    <h1>Hello --- {{ app.user }}</h1>
+
+        {% if is_granted('IS_AUTHENTICATED_REMEMBERED') %}
+            <a href="{{ path('fos_user_profile_show') }}">Show profile</a><br>
+            <a href="{{ path('fos_user_profile_edit') }}">Edit profile</a><br>
+            <a class="button" href="{{ path('fos_user_security_logout') }}">Logout {{ app.user.username }}</a><br>
+        {% else %}
+            <a class="button" href="{{ path('fos_user_security_login') }}">Login</a>
+        {% endif %}
+
+{% endblock %}
