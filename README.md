@@ -1,3 +1,13 @@
+Symfony2 starter code with basic setup for FOS UserBundle and Sonata Admin/UserBundles
+========================
+Files/bundles:
+- config.yml
+- security.yml
+- routing.yml (app/config)
+- User.php (Test/UserBundle/Entity/User.php)
+- UserAdmin.php (Test/UserBundle/Admin/UserAdmin.php)
+
+
 Symfony Standard Edition
 ========================
 
